@@ -42,4 +42,3 @@ RouteWrapper.propTypes = {
 RouteWrapper.defaultProps = {
   isPrivate: false,
 };
-s;
