@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
+import { Form , Input } from '@rocketseat/unform'
 
 import logo from '../../assets/logo.svg'
 // import { Container } from './styles';
@@ -9,13 +10,13 @@ export default function SigIn() {
   <>
     <img src={logo} alt="GoBarber"/>
 
-    <form>
-      <input type="text" placeholder="Seu Email" />
-      <input type="password" placeholder="Sua senha" />
+    <Form>
+      <Input type="text" placeholder="Seu Email" />
+      <Input type="password" placeholder="Sua senha" />
 
       <button  type="submit">Acessar </button>
 
       <Link to="/register" >Criar conta gratuita</Link>
-    </form>
+    </Form>
   </>)
 }
