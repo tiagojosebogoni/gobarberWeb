@@ -6,11 +6,10 @@ import * as Yup from 'yup';
 import { signInRequest } from '../../store/modules/auth/actions';
 
 import logo from '../../assets/logo.svg';
-// import { Container } from './styles';
 
 const schema = Yup.object().shape({
   email: Yup.string()
-    .email('Insira seu e-mail')
+    .email('Insira um email válido')
     .required('E-mail é obrigatório'),
   password: Yup.string().required('Senha é obrigaória'),
 });
