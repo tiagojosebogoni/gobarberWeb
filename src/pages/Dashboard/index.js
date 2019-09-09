@@ -39,7 +39,6 @@ export default function Dashboard() {
 
         const compareDate = utcToZonedTime(checkDate, timezone);
 
-        console.log(response);
         return {
           time: `${hour}:00h`,
           past: isBefore(compareDate, new Date()),
